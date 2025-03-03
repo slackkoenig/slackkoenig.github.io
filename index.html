@@ -113,6 +113,24 @@
                 <p>Supporting growth with tailored digital solutions and sustainable strategies.</p>
             </div>
         </div>
+  
+        <div class="contact-link">
+            <p>Interested in working together? <a href="#" id="emailLink">Get in touch</a></p>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let user = "ben"; // Change this to your email username
+                let domain = "reactant.at"; // Change this to your domain
+                let email = user + "@" + domain;
+                
+                let emailLink = document.getElementById("emailLink");
+                emailLink.setAttribute("href", "mailto:" + email);
+                emailLink.innerText = "Get in touch";
+            });
+        </script>
+
+    
     </main>
     <footer>
         <p>&copy; 2025 Reactant. All rights reserved.</p>
